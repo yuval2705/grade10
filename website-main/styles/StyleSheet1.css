@@ -1,0 +1,101 @@
+﻿
+body {
+    font-family: 'Bungee Hairline', cursive;
+    margin: 0;
+}
+
+.nav {
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-btn {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    width: 220px;
+    height: 35px;
+    background-color: rgb(56, 52, 52);
+    color: aliceblue;
+    font-size: 20px;
+    transition: 0.6s;
+    box-shadow: 0 0 20px #fa0000;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
+.nav-btn:hover {
+   margin: 2px;
+   width: 300px;
+   background-color: rgb(248, 239, 239);
+   color: rgb(56, 52, 52);
+}
+
+.title h1 {
+    font-family: 'Bungee Hairline', cursive;
+    margin: 2px;
+    margin-top: 2px;
+    font-size: 40px;
+}
+
+.title h2 {
+    font-family: 'Bungee Hairline', cursive;
+    margin: 2px;
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+.header h2 {
+    text-align:center;
+    font-family: 'Bungee Hairline', cursive;
+    margin: 5px;
+    margin-bottom: 2px;
+    font-size: 40px;
+}
+.header h1 {
+    text-align: center;
+    font-family: 'Bungee Hairline', cursive;
+    margin: 10px;
+    margin-bottom: 4px;
+    font-size: 100px;
+}
+.bottom {
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+}
+.bottom-btn {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 25px;
+    background-color: rgb(56, 52, 52);
+    color: aliceblue;
+    font-size: 15px;
+    transition: 0.6s;
+    box-shadow: 0 0 10px #fa0000;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+
+.bottom-btn:hover {
+    margin-bottom: 5px;
+    width: 200px;
+    background-color: rgb(248, 239, 239);
+    color: rgb(56, 52, 52);
+}
+.bottom h2 {
+    font-family: 'Bungee Hairline', cursive;
+    margin: 5px;
+    margin-bottom: 1px;
+    font-size: 40px;
+}
+
+
+
+

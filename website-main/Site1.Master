@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="website_main.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="styles/StyleSheet1.css" rel="stylesheet" />
+    <script>
+        var bleep = new Audio();
+        bleep.src = "pics/bleep.mp3";
+        
+    </script>
+</head>
+<body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+        </style>
+        <div style="margin:0px">
+
+            <center>
+            <div class="title" id="title">
+                <a href="Main.aspx" onmousedown="bleep.play()" style="text-decoration-line:none; outline:none;color:black;"><h1 class="callout-subtitle animate__animated animate__zoomInDown" style="margin-bottom:0;">The Gang</h1></a>
+            </div>
+
+            <div class="nav">
+                
+                <button class="nav-btn" onclick="location.href='Asaf.aspx'" type="button" >Asaf</button>
+                <button class="nav-btn" onclick="location.href='Aviv.aspx'" type="button" >Aviv</button>
+                <button class="nav-btn" onclick="location.href='Yuval.aspx'" type="button" >Yuval</button>
+                <button class="nav-btn" onclick="location.href='Niv.aspx'" type="button" >Niv</button>
+                <button class="nav-btn" onclick="location.href='Eyal.aspx'" type="button" >Eyal</button>
+                <button class="nav-btn" onclick="location.href='Cassuto.aspx'" type="button" >Jonathan</button>
+                 <%if (Session["admin"] == null && Session["user"]== null)
+                   { %>
+                <button class="nav-btn" onclick="location.href='login/Login.aspx'" type="button">Login</button>
+                 <%} %>
+                
+                <% else if(Session["admin"]!= null)
+                  { %>
+                <button class="nav-btn" onclick="location.href='login/Login.aspx'" type="button">Log out</button>
+                <button class="nav-btn" onclick="location.href='../pages/adminPage.aspx'" type="button">Admin</button>
+                <%} %> 
+
+                <% else if(Session["user"]!= null)
+                  { %>
+                <button class="nav-btn" onclick="location.href='login/Login.aspx'" type="button">Log out</button>
+                <button class="nav-btn" onclick="location.href='../pages/UserPage.aspx'" type="button"><%=name %></button>
+                <%} %> 
+                
+            </div>
+                </center>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+</body>
+</html>

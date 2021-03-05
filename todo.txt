@@ -1,0 +1,3 @@
+fix the forgot password fanction (1
+finish up the information pages (2
+finish up the input vaildation (3
